@@ -1,0 +1,48 @@
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    touch-action: none;
+    overflow: hidden;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#start-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+#start-button {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: #0095DD;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  #start-screen {
+    display: none;
+  }
+}
